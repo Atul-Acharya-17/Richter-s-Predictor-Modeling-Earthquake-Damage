@@ -52,4 +52,18 @@ There are 39 columns in this dataset, where the *building_id* column is a unique
 * has_secondary_use_health_post (type: binary): flag variable that indicates if the building was used as a health post.
 * has_secondary_use_gov_office (type: binary): flag variable that indicates if the building was used fas a government office.
 * has_secondary_use_use_police (type: binary): flag variable that indicates if the building was used as a police station.
-has_secondary_use_other (type: binary): flag variable that indicates if the building was secondarily used for other purposes.
+* has_secondary_use_other (type: binary): flag variable that indicates if the building was secondarily used for other purposes.
+
+# Solution
+
+* Target Encoding Categorical Variables
+* Feature Engineering by creating Polynomial Features
+* Outlier Score Calculation using Isolation Forest
+* Feature Selection and Importance using SelectFromModel, RandomForest, XGBoost, LightGBM
+* Encoding Geo Location data using LSTMs
+* Scaling Continuous using MinMaxScaler
+* Stacking Classifier - base-estimators: XGBoost, LightGBM, CatBoost, meta-estimator: RandomForest
+
+<p align="center">
+  <img src="images/Solution.png" />
+</p>
